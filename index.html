@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ананасовый улун | Чайный Бум</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <article class="product-card">
+      <div class="product-card__image-wrapper">
+        <img 
+          src="https://media.teaboom.ru/images/e4bb1618-fb80-41e2-8758-86f884ce095d.jpg" 
+          alt="Ананасовый улун" 
+          class="product-card__image"
+          onerror="this.src='https://placehold.co/600x600/f4f7f4/557c55?text=Ананасовый+Улун'"
+        >
+      </div>
+      
+      <div class="product-card__info">
+        <div class="product-card__header">
+          <h1 class="product-card__title">Ананасовый улун</h1>
+          <button class="favorite-btn" id="favorite-btn" aria-label="Добавить в избранное" type="button">
+            <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="product-card__meta">
+          <a href="#reviews" class="review-link">оставить отзыв</a>
+        </div>
+
+        <div class="product-card__article">арт: <span id="article">01306</span></div>
+        <div class="product-card__stock">наличие: <span class="stock-available">Много</span></div>
+        <div class="product-card__packaging" id="packaging-options">
+          <button class="packaging-option active" 
+                  data-weight="100" 
+                  data-article="01306" 
+                  data-price="326.40" 
+                  data-old-price="349.20">
+            100 г
+          </button>
+          <button class="packaging-option" 
+                  data-weight="500" 
+                  data-article="01307" 
+                  data-price="1432.00" 
+                  data-old-price="1646.00">
+            500 г
+          </button>
+          <button class="packaging-option" 
+                  data-weight="1000" 
+                  data-article="01308" 
+                  data-price="2064.00" 
+                  data-old-price="2592.00">
+            1000 г
+          </button>
+          <button class="packaging-option" 
+                  data-weight="5000" 
+                  data-article="01309" 
+                  data-price="6320.00" 
+                  data-old-price="8710.00">
+            5000 г
+          </button>
+        </div>
+        
+        <div class="product-card__price-block">
+          <span class="product-card__old-price" id="old-price">349,20 ₽</span>
+          <span class="product-card__current-price" id="current-price">326,40 ₽</span>
+        </div>
+        <button class="product-card__add-to-cart" id="add-to-cart-btn">
+          В КОРЗИНУ
+        </button>
+        <div class="product-card__description">
+          <p>Светлый Фуцзяньский улун с ароматом ананаса. В сухом виде — красивый крупный лист изумрудного цвета, скруткой листа напоминающий Те Гуань Инь. В прогретой посуде аромат свежей, весенней зелени и спелого ананаса.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+  <div id="image-modal" class="image-modal" aria-hidden="true">
+    <div class="image-modal__backdrop"></div>
+    <button class="image-modal__close" aria-label="Закрыть изображение">&times;</button>
+    <img src="" alt="Увеличенное изображение товара" class="image-modal__img">
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
